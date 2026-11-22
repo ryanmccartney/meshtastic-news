@@ -1,0 +1,25 @@
+{
+    "name": "meshtastic-news",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "Ryan McCartney <ryan@mccartney.info",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "prod": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "format:check": "prettier --check .",
+        "format:fix": "prettier --write ."
+    },
+    "dependencies": {
+        "@meshtastic/transport-http": "^0.2.5",
+        "dotenv": "^18.0.10",
+        "node-cron": "^4.6.0",
+        "rss-parser": "^3.13.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14",
+        "prettier": "^3.10.1"
+    }
+}
